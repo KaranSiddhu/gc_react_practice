@@ -1,24 +1,12 @@
-# version: '3'
-
-# services:
-#   react-app:
-#     container_name: react-app
-#     build:
-#       context: .
-#       dockerfile: Dockerfile
-#     ports:
-#       - "3000:3000"
-#     volumes:
-#       - .:/app
-#     environment:
-#       - NODE_ENV=production
-
 version: '3'
 
 services:
-  web:
+  react-app:
+    container_name: react-app
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "80:80"
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
